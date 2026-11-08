@@ -493,7 +493,7 @@ def generer(meteo, nuit):
         for i, (x, y, s) in enumerate([(400, 170, 130), (1100, 150, 150), (1700, 190, 120)]):
             nuage(d, x, y, s, blanc_nuage, random.Random(f"s{i}"), visage=v.get("nuage") if i == 1 else None)
         flocons(d, rng, 160)
-    elif meteo == "brouillard":
+    else:  # brouillard : ciel() a déjà rejeté les météos inconnues
         brouillard(img, nuit)
 
     return img.convert("RGB")
