@@ -36,6 +36,7 @@ Sans Pillow, utilise tes propres images avec `--images DIR`.
 
 ```
 meteo-wallpaper --code 389 --nuit         # force orage de nuit
+meteo-wallpaper --dry-run --code 389 --nuit # affiche le fichier choisi sans changer le fond
 journalctl --user -u meteo-wallpaper       # logs
 systemctl --user list-timers meteo-wallpaper.timer
 ```
