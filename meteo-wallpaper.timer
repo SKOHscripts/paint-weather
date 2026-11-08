@@ -1,0 +1,9 @@
+[Unit]
+Description=Rafraîchit le fond d'écran météo toutes les 30 minutes
+
+[Timer]
+OnStartupSec=1min
+OnUnitActiveSec=30min
+
+[Install]
+WantedBy=timers.target

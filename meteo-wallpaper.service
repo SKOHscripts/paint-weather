@@ -1,0 +1,7 @@
+[Unit]
+Description=Fond d'écran selon la météo (wttr.in)
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/meteo-wallpaper
